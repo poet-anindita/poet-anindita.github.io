@@ -98,65 +98,12 @@ a:hover {
   letter-spacing: 0.04em;
 }
 
-.layout {
-  display: flex;
-  align-items: flex-start;
-  gap: 2.5rem;
+main {
+  display: block;
   max-width: 920px;
   width: 100%;
   margin: 0 auto;
   padding: 1.2rem 1.5rem 2rem;
-}
-
-.sidebar {
-  flex: 0 0 170px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  position: sticky;
-  top: 1.2rem;
-}
-
-.sidebar-link {
-  padding: 0.45rem 0.6rem;
-  font-size: 0.92rem;
-  letter-spacing: 0.02em;
-  color: var(--ink-soft);
-  border-radius: 3px;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.sidebar-link:hover {
-  color: var(--maroon);
-  text-decoration: none;
-}
-
-.sidebar-link.is-active {
-  color: var(--maroon);
-  font-weight: 600;
-  background-color: rgba(122, 51, 39, 0.08);
-}
-
-main {
-  flex: 1;
-  min-width: 0;
-  width: 100%;
-}
-
-@media (max-width: 700px) {
-  .layout {
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-  .sidebar {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: static;
-    width: 100%;
-    border-bottom: 1px dotted rgba(91, 74, 61, 0.3);
-    padding-bottom: 0.8rem;
-  }
 }
 
 /* About */
