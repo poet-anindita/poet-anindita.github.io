@@ -1,0 +1,12 @@
+baseURL = "https://poet-anindita.github.io/"
+languageCode = "bn"
+title = "Poet Anindita"
+
+[params]
+  tagline = "কবিতা · Poems"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS"]

@@ -1,0 +1,186 @@
+:root {
+  --parchment: #f3ead9;
+  --parchment-dark: #e9dcc3;
+  --ink: #3a2e26;
+  --ink-soft: #5b4a3d;
+  --maroon: #7a3327;
+  --gold: #a9802f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--parchment);
+  background-image:
+    radial-gradient(ellipse at top left, rgba(169, 128, 47, 0.06), transparent 60%),
+    radial-gradient(ellipse at bottom right, rgba(122, 51, 39, 0.06), transparent 60%);
+  color: var(--ink);
+  font-family: 'Tiro Bangla', 'Cormorant Garamond', Georgia, serif;
+  line-height: 1.9;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--maroon);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+}
+
+.page-frame {
+  position: relative;
+  overflow: hidden;
+}
+
+.corner-bird {
+  position: absolute;
+  top: 0.5rem;
+  width: 64px;
+  height: 64px;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.corner-bird.left {
+  left: 1rem;
+}
+
+.corner-bird.right {
+  right: 1rem;
+  transform: scaleX(-1);
+}
+
+.frieze {
+  height: 18px;
+  background-image: url('/img/frieze.svg');
+  background-repeat: repeat-x;
+  background-position: center;
+  opacity: 0.85;
+}
+
+.site-header {
+  text-align: center;
+  padding: 3.5rem 1.5rem 1.5rem;
+}
+
+.site-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+  text-transform: uppercase;
+}
+
+.site-title:hover {
+  text-decoration: none;
+  color: var(--maroon);
+}
+
+.site-tagline {
+  margin-top: 0.6rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+}
+
+main {
+  flex: 1;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+/* Poem list */
+.poem-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.poem-list-item {
+  font-size: 1.3rem;
+  padding: 0.85rem 0.5rem;
+  border-bottom: 1px dotted rgba(91, 74, 61, 0.35);
+  color: var(--ink);
+  transition: padding-left 0.2s ease, color 0.2s ease;
+}
+
+.poem-list-item:hover {
+  padding-left: 0.9rem;
+  color: var(--maroon);
+  text-decoration: none;
+}
+
+/* Single poem */
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.03em;
+}
+
+.poem-title {
+  font-family: 'Tiro Bangla', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: var(--ink);
+}
+
+.poem-ornament {
+  text-align: center;
+  margin: 0.5rem auto 2.5rem;
+  width: 200px;
+}
+
+.poem-ornament svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.poem-body {
+  font-size: 1.25rem;
+  color: var(--ink);
+}
+
+.poem-body p {
+  margin: 0 0 1.6em 0;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1.5rem 1rem 2rem;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 600px) {
+  .site-title {
+    font-size: 1.8rem;
+  }
+  .poem-title {
+    font-size: 1.5rem;
+  }
+  .poem-body {
+    font-size: 1.1rem;
+  }
+}

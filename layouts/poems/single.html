@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="poem">
+  <a class="back-link" href="{{ "/" | relURL }}">&larr; সব কবিতা</a>
+  <h1 class="poem-title">{{ .Title }}</h1>
+  <div class="poem-ornament">
+    <svg viewBox="0 0 100 16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 8 Q25 8 38 8" stroke="#a9802f" stroke-width="1.2" fill="none"/>
+      <path d="M40 8 Q46 1 50 1 Q54 1 60 8 Q54 15 50 15 Q46 15 40 8 Z" fill="#7a3327"/>
+      <circle cx="50" cy="8" r="1.8" fill="#f3ead9"/>
+      <path d="M62 8 Q75 8 98 8" stroke="#a9802f" stroke-width="1.2" fill="none"/>
+    </svg>
+  </div>
+  <div class="poem-body">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}
