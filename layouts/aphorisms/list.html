@@ -3,9 +3,9 @@
 <div class="aphorism-list">
   {{ if .Pages }}
     {{ range .Pages }}
-      <a class="aphorism-list-item" href="{{ .Permalink }}">
+      <p class="aphorism-list-item">
         <span class="quote-mark">&ldquo;</span>{{ .Title }}
-      </a>
+      </p>
     {{ end }}
   {{ else }}
     <p class="empty-note">Coming soon.</p>

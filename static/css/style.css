@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 18px;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -161,21 +165,16 @@ main {
 }
 
 .aphorism-list-item {
-  font-style: italic;
+  margin: 0;
   font-size: 1rem;
   padding: 0.55rem 0.3rem;
   border-bottom: 1px dotted rgba(91, 74, 61, 0.3);
-  color: var(--maroon);
+  color: var(--ink);
 }
 
 .aphorism-list-item .quote-mark {
   color: var(--gold);
   margin-right: 0.3rem;
-  font-style: normal;
-}
-
-.aphorism-list-item:hover {
-  color: var(--ink);
 }
 
 .empty-note {
