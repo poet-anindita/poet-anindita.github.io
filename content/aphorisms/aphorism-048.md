@@ -1,6 +1,6 @@
 ---
-title: "Ifear not to be insulted; I fear not to be disrespected, as then I will be able to focus on and love myself more."
+title: "I fear not to be insulted; I fear not to be disrespected, as then I will be able to focus on and love myself more."
 weight: 48
 ---
 
-Ifear not to be insulted; I fear not to be disrespected, as then I will be able to focus on and love myself more.
+I fear not to be insulted; I fear not to be disrespected, as then I will be able to focus on and love myself more.

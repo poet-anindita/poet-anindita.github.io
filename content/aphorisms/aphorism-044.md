@@ -1,6 +1,6 @@
 ---
-title: "Abold pen is more effective than a lecture."
+title: "A bold pen is more effective than a lecture."
 weight: 44
 ---
 
-Abold pen is more effective than a lecture.
+A bold pen is more effective than a lecture.
