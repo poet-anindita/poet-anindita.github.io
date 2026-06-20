@@ -1,8 +1,17 @@
 {{ define "main" }}
-<div class="poem-list">
-  {{ $poems := .Site.GetPage "poems" }}
-  {{ range $poems.Pages }}
-    <a class="poem-list-item" href="{{ .Permalink }}">{{ .Title }}</a>
-  {{ end }}
+<div class="about">
+  <div class="about-body">
+    {{ .Content }}
+  </div>
+  <div class="about-links">
+    <a class="about-card" href="{{ "/poems/" | relURL }}">
+      <span class="about-card-title">বাংলা কবিতা</span>
+      <span class="about-card-desc">কবি অনিন্দিতার লেখা কবিতার সংকলন</span>
+    </a>
+    <a class="about-card" href="{{ "/aphorisms/" | relURL }}">
+      <span class="about-card-title">Aphorisms</span>
+      <span class="about-card-desc">Short reflections on everyday life</span>
+    </a>
+  </div>
 </div>
 {{ end }}

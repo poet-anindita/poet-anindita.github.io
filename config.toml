@@ -3,10 +3,28 @@ languageCode = "bn"
 title = "Poet Anindita"
 
 [params]
-  tagline = "কবিতা · Poems"
+  tagline = "কবিতা ও কথা · Poems & Words"
 
 [markup.goldmark.renderer]
   unsafe = true
 
 [outputs]
   home = ["HTML", "RSS"]
+
+[[menu.main]]
+  name = "পরিচিতি · About"
+  identifier = "about"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "বাংলা কবিতা"
+  identifier = "poems"
+  url = "/poems/"
+  weight = 2
+
+[[menu.main]]
+  name = "Aphorisms"
+  identifier = "aphorisms"
+  url = "/aphorisms/"
+  weight = 3

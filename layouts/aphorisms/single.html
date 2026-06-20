@@ -1,0 +1,8 @@
+{{ define "main" }}
+<article class="aphorism">
+  <a class="back-link" href="{{ "/aphorisms/" | relURL }}">&larr; Aphorisms</a>
+  <blockquote class="aphorism-text">
+    {{ .Content }}
+  </blockquote>
+</article>
+{{ end }}

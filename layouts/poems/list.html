@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="poem-list">
   {{ range .Pages }}
-    <a class="poem-list-item" href="{{ .Permalink }}">{{ .Title }}</a>
+    <a class="poem-list-item" href="{{ .Permalink }}"><span>{{ .Title }}</span><span class="arrow">&rarr;</span></a>
   {{ end }}
 </div>
 {{ end }}

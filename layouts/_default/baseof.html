@@ -19,9 +19,17 @@
       <p class="site-tagline">{{ .Site.Params.tagline }}</p>
     </header>
     <div class="frieze"></div>
-    <main>
-      {{ block "main" . }}{{ end }}
-    </main>
+    <div class="layout">
+      {{ $p := . }}
+      <nav class="sidebar">
+        {{ range .Site.Menus.main }}
+          <a class="sidebar-link{{ if or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }} is-active{{ end }}" href="{{ .URL | relURL }}">{{ .Name }}</a>
+        {{ end }}
+      </nav>
+      <main>
+        {{ block "main" . }}{{ end }}
+      </main>
+    </div>
     <div class="frieze"></div>
     <footer class="site-footer">
       <p>&copy; {{ now.Year }} Poet Anindita</p>

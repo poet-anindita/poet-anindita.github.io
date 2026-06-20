@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="aphorism-list">
+  {{ if .Pages }}
+    {{ range .Pages }}
+      <a class="aphorism-list-item" href="{{ .Permalink }}">
+        <span class="quote-mark">&ldquo;</span>{{ .Title }}
+      </a>
+    {{ end }}
+  {{ else }}
+    <p class="empty-note">শীঘ্রই আসছে &mdash; coming soon.</p>
+  {{ end }}
+</div>
+{{ end }}

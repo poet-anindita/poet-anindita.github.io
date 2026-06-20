@@ -20,7 +20,7 @@ html, body {
     radial-gradient(ellipse at bottom right, rgba(122, 51, 39, 0.06), transparent 60%);
   color: var(--ink);
   font-family: 'Tiro Bangla', 'Cormorant Garamond', Georgia, serif;
-  line-height: 1.9;
+  line-height: 1.65;
   min-height: 100vh;
 }
 
@@ -46,10 +46,10 @@ a:hover {
 
 .corner-bird {
   position: absolute;
-  top: 0.5rem;
-  width: 64px;
-  height: 64px;
-  opacity: 0.9;
+  top: 0.4rem;
+  width: 46px;
+  height: 46px;
+  opacity: 0.85;
   z-index: 1;
 }
 
@@ -63,21 +63,22 @@ a:hover {
 }
 
 .frieze {
-  height: 18px;
+  height: 13px;
   background-image: url('/img/frieze.svg');
   background-repeat: repeat-x;
   background-position: center;
+  background-size: 32px 13px;
   opacity: 0.85;
 }
 
 .site-header {
   text-align: center;
-  padding: 3.5rem 1.5rem 1.5rem;
+  padding: 1.8rem 1.5rem 0.9rem;
 }
 
 .site-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 2.4rem;
+  font-size: 1.7rem;
   font-weight: 600;
   letter-spacing: 0.08em;
   color: var(--ink);
@@ -90,40 +91,199 @@ a:hover {
 }
 
 .site-tagline {
-  margin-top: 0.6rem;
+  margin-top: 0.3rem;
   font-style: italic;
   color: var(--ink-soft);
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   letter-spacing: 0.04em;
+}
+
+.layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.2rem 1.5rem 2rem;
+}
+
+.sidebar {
+  flex: 0 0 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  position: sticky;
+  top: 1.2rem;
+}
+
+.sidebar-link {
+  padding: 0.45rem 0.6rem;
+  font-size: 0.92rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+  border-radius: 3px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar-link:hover {
+  color: var(--maroon);
+  text-decoration: none;
+}
+
+.sidebar-link.is-active {
+  color: var(--maroon);
+  font-weight: 600;
+  background-color: rgba(122, 51, 39, 0.08);
 }
 
 main {
   flex: 1;
-  max-width: 720px;
+  min-width: 0;
   width: 100%;
-  margin: 0 auto;
-  padding: 3rem 1.5rem 4rem;
 }
 
-/* Poem list */
-.poem-list {
+@media (max-width: 700px) {
+  .layout {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: static;
+    width: 100%;
+    border-bottom: 1px dotted rgba(91, 74, 61, 0.3);
+    padding-bottom: 0.8rem;
+  }
+}
+
+/* About */
+.about-body {
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+.about-links {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.about-card {
+  flex: 1 1 220px;
+  border: 1px solid rgba(122, 51, 39, 0.25);
+  border-radius: 6px;
+  padding: 1.1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.about-card:hover {
+  border-color: var(--maroon);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.about-card-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--maroon);
+}
+
+.about-card-desc {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+/* Aphorisms */
+.aphorism-list {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
 }
 
-.poem-list-item {
-  font-size: 1.3rem;
-  padding: 0.85rem 0.5rem;
-  border-bottom: 1px dotted rgba(91, 74, 61, 0.35);
+.aphorism-list-item {
+  font-style: italic;
+  font-size: 1rem;
+  padding: 0.55rem 0.3rem;
+  border-bottom: 1px dotted rgba(91, 74, 61, 0.3);
+  color: var(--maroon);
+}
+
+.aphorism-list-item .quote-mark {
+  color: var(--gold);
+  margin-right: 0.3rem;
+  font-style: normal;
+}
+
+.aphorism-list-item:hover {
   color: var(--ink);
+}
+
+.empty-note {
+  font-style: italic;
+  color: var(--ink-soft);
+  font-size: 1rem;
+}
+
+.aphorism-text {
+  font-size: 1.4rem;
+  font-style: italic;
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.6;
+  text-align: center;
+  margin: 1.5rem auto;
+  max-width: 540px;
+  color: var(--ink);
+}
+
+/* Poem list */
+.poem-list {
+  columns: 2;
+  column-gap: 2.5rem;
+}
+
+.poem-list-item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.6rem;
+  font-size: 1rem;
+  padding: 0.5rem 0.3rem;
+  border-bottom: 1px dotted rgba(91, 74, 61, 0.3);
+  color: var(--maroon);
+  break-inside: avoid;
   transition: padding-left 0.2s ease, color 0.2s ease;
 }
 
+.poem-list-item .arrow {
+  color: var(--gold);
+  opacity: 0.55;
+  font-size: 0.85em;
+  flex-shrink: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
 .poem-list-item:hover {
-  padding-left: 0.9rem;
-  color: var(--maroon);
+  padding-left: 0.7rem;
+  color: var(--ink);
   text-decoration: none;
+}
+
+.poem-list-item:hover .arrow {
+  opacity: 1;
+  transform: translateX(3px);
+}
+
+@media (max-width: 700px) {
+  .poem-list {
+    columns: 1;
+  }
 }
 
 /* Single poem */
@@ -157,12 +317,12 @@ main {
 }
 
 .poem-body {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   color: var(--ink);
 }
 
 .poem-body p {
-  margin: 0 0 1.6em 0;
+  margin: 0 0 1.2em 0;
 }
 
 .site-footer {
