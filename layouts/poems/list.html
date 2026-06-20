@@ -1,4 +1,5 @@
 {{ define "main" }}
+<a class="back-link" href="{{ "/" | relURL }}">&larr; Home</a>
 <div class="poem-list">
   {{ range .Pages }}
     <a class="poem-list-item" href="{{ .Permalink }}"><span lang="bn">{{ .Title }}</span><span class="arrow">&rarr;</span></a>
