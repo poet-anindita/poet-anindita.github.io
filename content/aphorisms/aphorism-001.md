@@ -1,5 +1,5 @@
 ---
-title: "Placeholder — replace with a real aphorism"
+title: "Placeholder - replace with a real aphorism"
 weight: 1
 draft: true
 ---
