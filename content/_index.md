@@ -2,6 +2,6 @@
 title: "Poet Anindita"
 ---
 
-অনিন্দিতা একজন কবি, যিনি দীর্ঘদিন ধরে বাংলা ভাষায় কবিতা লিখে আসছেন — ভালোবাসা, প্রকৃতি, রোজকার জীবনের ছোট ছোট অনুভূতি আর তার ভিতরের গভীর সত্য নিয়ে। তাঁর লেখায় সরলতা আর গভীরতা একসাথে মিলেমিশে থাকে।
+Anindita is a poet who has been writing in Bengali for many years — about love, nature, the small feelings of everyday life, and the deeper truths inside them. Her writing holds simplicity and depth together, side by side.
 
-এই ওয়েবসাইটে রয়েছে তাঁর বাংলা কবিতার সংকলন, এবং পাশাপাশি ইংরেজিতে লেখা কিছু ছোট জীবনবোধের কথা — অ্যাফোরিজম। নিচের তালিকা থেকে যে বিভাগে ইচ্ছে, ঘুরে আসুন।
+This site brings together her collection of Bengali poems, along with a few short English aphorisms — little observations on everyday wisdom. Pick a section from the menu to start reading.

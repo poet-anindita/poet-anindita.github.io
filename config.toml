@@ -1,9 +1,9 @@
 baseURL = "https://poet-anindita.github.io/"
-languageCode = "bn"
+languageCode = "en"
 title = "Poet Anindita"
 
 [params]
-  tagline = "কবিতা ও কথা · Poems & Words"
+  tagline = "Poems & Words"
 
 [markup.goldmark.renderer]
   unsafe = true
@@ -12,13 +12,13 @@ title = "Poet Anindita"
   home = ["HTML", "RSS"]
 
 [[menu.main]]
-  name = "পরিচিতি · About"
+  name = "About"
   identifier = "about"
   url = "/"
   weight = 1
 
 [[menu.main]]
-  name = "বাংলা কবিতা"
+  name = "Bengali Poems"
   identifier = "poems"
   url = "/poems/"
   weight = 2
