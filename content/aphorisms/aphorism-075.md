@@ -1,6 +1,6 @@
 ---
-title: "Indirect sacrifices often go unnoticed. Monotony is a part of life. We can get bored at our peak also."
+title: "Indirect sacrifices often go unnoticed."
 weight: 75
 ---
 
-Indirect sacrifices often go unnoticed. Monotony is a part of life. We can get bored at our peak also.
+Indirect sacrifices often go unnoticed.
