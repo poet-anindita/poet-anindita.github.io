@@ -1,6 +1,6 @@
 ---
-title: "Life is a journey, not a competition."
+title: "Success is not permanent and failure is not final, so never stop working after success or stop trying after failure."
 weight: 101
 ---
 
-Life is a journey, not a competition.
+Success is not permanent and failure is not final, so never stop working after success or stop trying after failure.
